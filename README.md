@@ -23,3 +23,24 @@ A React application for dental questions and answers with individual question pa
 - Click "詳細を見る" to view individual questions
 - Toggle to "医者モード" to access answering features on question detail pages
 - Doctors can answer questions on the detail page
+
+## Docker
+
+Build the Docker image:
+
+```bash
+docker build -t q-a-expert-questions .
+```
+
+Run the container:
+
+```bash
+docker run -p 8080:80 q-a-expert-questions
+```
+
+Alternatively with Docker Compose:
+
+```bash
+docker compose up --build
+```
+
